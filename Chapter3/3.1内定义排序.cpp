@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include <cstdio>
-#include <algorithm>
+#include <algorithm>  //sort函数头文件
 
 using namespace std;
 
@@ -21,7 +21,7 @@ int main() {
         for (int i = 0; i < n; ++i) {
             scanf("%d", &arr[i]);
         }
-        sort(arr, arr + n);             //默认升序排序
+        sort(arr, arr + n);             //默认升序排序  sort(起始地址，末尾地址，compare比较函数)
         for (int i = 0; i < n; ++i) {
             printf("%d ", arr[i]);
         }
