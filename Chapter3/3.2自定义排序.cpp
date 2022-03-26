@@ -21,9 +21,9 @@ struct Student {
 Student arr[MAXN];
 
 bool Compare(Student x, Student y) {                //比较函数
-    if (x.score == y.score) {                       //成绩相等比较学号
+    if (x.score == y.score) {                       //成绩一样比较学号
         return x.number < y.number;
-    } else {                                        //成绩不等比较成绩
+    } else {                                        //成绩不一样比较成绩
         return x.score < y.score;
     }
 }
@@ -34,7 +34,7 @@ int main() {
     for (int i = 0; i < n; ++i) {
         scanf("%d%d", &arr[i].number, &arr[i].score);
     }
-    sort(arr, arr + n, Compare);                    //按照比较函数排序
+    sort(arr, arr + n, Compare);                //按照比较函数排序
     for (int i = 0; i < n; ++i) {
         printf("%d %d\n", arr[i].number, arr[i].score);
     }
