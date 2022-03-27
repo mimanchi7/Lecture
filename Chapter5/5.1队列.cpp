@@ -7,12 +7,12 @@ using namespace std;
 int main() {
 	queue<int>myQueue;
 	for (int i = 0;i < 10;++i) {
-		myQueue.push(i);     //ÈëÕ»
+		myQueue.push(i);     //ÃˆÃ«Ã•Â»
 	}
 	int sum = 0;
-	while (!myQueue.empty()) { //ÅÐ¿Õ
-		sum += myQueue.front(); //·ÃÎÊ¶ÓÊ×
-		myQueue.pop();         //³ö¶Ó
+	while (!myQueue.empty()) { //Ã…ÃÂ¿Ã•
+		sum += myQueue.front(); //Â·ÃƒÃŽÃŠÂ¶Ã“ÃŠÃ—
+		myQueue.pop();         //Â³Ã¶Â¶Ã“
 	}
 	printf("%d\n", sum);
 	return 0;
