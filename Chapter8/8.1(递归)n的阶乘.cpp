@@ -3,6 +3,8 @@
 * 题目来源：清华大学复试上机题
 * 题目链接：http://t.cn/Ai0ocOUY
 * 代码作者：杨泽邦(炉灰)
+*递归出口
+*递归调用（我用我自己）
 */
 
 #include <iostream>
@@ -10,7 +12,7 @@
 
 using namespace std;
 
-long long Factorial(int n) {            //递归函数
+long long Factorial(int n) {            //递归函数   long long
     if (n == 0) {                       //递归出口
         return 1;
     } else {                            //递归调用
