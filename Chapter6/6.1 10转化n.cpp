@@ -7,7 +7,7 @@
 
 #include <iostream>
 #include <cstdio>
-#include <vector>
+#include <vector> // 表示各个进制位上的数，向量长度可变
 
 using namespace std;
 
